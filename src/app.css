@@ -1,0 +1,45 @@
+.tile[status="correct"] {
+    background-color: green;
+}
+
+.tile[status="incorrect"] {
+    background-color: red;
+}
+
+.tile[status="misplaced"] {
+    background-color:gold
+}
+
+.tile:not([value=""]) {
+    border: 2px solid gray;
+}
+
+.tile[value=""] {
+    border: 2px solid lightgray;
+}
+
+.tile {
+    margin-left: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.6vw;
+    text-align: center;
+    line-height: 3vw; /*center text vertically*/
+
+
+    width: 3vw;
+    height: 3vw;
+}
+
+.row {
+    display: flex;
+    margin-top: 5px;
+}
+
+#app {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
